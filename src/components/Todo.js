@@ -3,11 +3,10 @@ import Header from './header';
 import AddTodo from './add_todo';
 import Footer from './footer';
 
-class App extends Component {
+class Todo extends Component {
 constructor(props) {
   super(props);
 
-  
 }
 
   render() {
@@ -21,4 +20,4 @@ constructor(props) {
   }
 }
 
-export default App;
+export default Todo;
