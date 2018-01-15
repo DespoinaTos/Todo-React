@@ -150,10 +150,14 @@ body {
 footer {
 		display: flex;
 		flex-wrap: wrap;
-    position: relative;
-    margin-bottom: 30px;
     text-align: center;
-    width: 100%;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding-bottom: 20px;
+		
 }
 
 footer p {
@@ -172,3 +176,4 @@ span {
     margin-right: 4px;
     font-size: 14px;
 }
+
