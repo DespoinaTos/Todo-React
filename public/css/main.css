@@ -142,3 +142,33 @@ table {
 body {
     background-color: #E7E636;
 }
+
+/*-----------------------------------------------
+*   Footer
+-----------------------------------------------*/
+
+footer {
+		display: flex;
+		flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.8em;
+    padding: 4px;
+}
+
+span {
+    background-color: black;
+    color: white;
+    padding: 1px;
+}
+
+.fa-cog {
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 14px;
+}
