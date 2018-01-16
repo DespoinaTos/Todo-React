@@ -31,19 +31,19 @@ class AddTodo extends Component {
 
 	//function when the user clicks the delete todo button
 	onClickDelete = (i) => {
-		const newtodosD = this.state.todos.slice();
-		newtodosD.splice(i ,1);
+		let newtodosD = this.state.todos.slice();
+		newtodosD.splice(i, 1);
 		this.setState({
 			todos: newtodosD,
-		})
-	};
+		});
+	}
 
 	render() {
 		let listTodosItems = this.state.todos.map((e, i) => {
 			return (
 				<li className="lis" key={i}> {e} 
 				<i className="fa fa-check-square-o" aria-hidden="true" ></i>
-				<i onClick={this.onClickDelete} className="fa fa-minus-square-o" aria-hidden="true"></i>
+				<i onClick={() => this.onClickDelete(i)} className="fa fa-minus-square-o" aria-hidden="true"></i>
 				 </li>
 			);
 		});
