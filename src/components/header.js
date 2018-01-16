@@ -1,3 +1,5 @@
+// This is the header of the app with the logo
+
 import React from 'react';
 import logo from './img/monkey.svg';
 

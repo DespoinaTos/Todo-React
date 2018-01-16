@@ -181,10 +181,24 @@ body {
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
     display:  flex;
-    justify-content:  center;
-    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;  
+    flex-wrap: wrap; 
+    flex-grow: 1; 
+}
+
+.lis {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 7px;
+    padding: 5px;
+    border-bottom: 2px dotted rgb(126, 126, 126)  
+}
+
+.fa-minus-square-o {
+    align-content: flex-end;
 }
 
 /*-----------------------------------------------
@@ -201,13 +215,13 @@ body {
 
 .input {
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 60%;
     padding: 10px;
     text-align: center;
     border: 2px solid rgb(58, 58, 58);
     color: #1d1d1d;
-    font-family: 'Rubik';
+    font-family: 'Permanent Marker', cursive;
     font-size: 19px;
 }
 

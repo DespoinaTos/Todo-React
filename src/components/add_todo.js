@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TodosList from './todo_list';
-import logo from './img/monkey.svg';
+import logo from './img/msg.png';
 
 class AddTodo extends Component {
 	constructor(props) {
@@ -40,7 +40,7 @@ class AddTodo extends Component {
 	render() {
 		let listTodosItems = this.state.todos.map((e, i) => {
 			return (
-				<li key={i}> {e}<button onClick={this.onClickDelete}>delete</button> </li>
+				<li className="lis" key={i}> {e} <i onClick={this.onClickDelete} className="fa fa-minus-square-o" aria-hidden="true"></i> </li>
 			);
 		});
 
