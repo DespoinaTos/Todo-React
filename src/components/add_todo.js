@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import TodosList from './todo_list';
+import logo from './img/monkey.svg';
 
 class AddTodo extends Component {
 	constructor(props) {
 		super(props);
 	  
+		// setting the state
 		this.state = { 
 		  todos: [],
 		  currentTodo: '',
 		};
 	  }
 	
-	onInputAdd = event => {
+	  //function when the input state changes
+	  onInputAdd = event => {
 		this.setState({currentTodo: event.target.value});
 	};
 
+	//function when the user clicks the add todo button
 	onClickAdd = () => {
 		const newtodos = this.state.todos.slice();
 		newtodos.push(this.state.currentTodo);
@@ -24,6 +28,7 @@ class AddTodo extends Component {
 		});
 	};
 
+	//function when the user clicks the delete todo button
 	onClickDelete = (i) => {
 		const newtodosD = this.state.todos.slice();
 		newtodosD.splice(i ,1);
@@ -43,10 +48,11 @@ class AddTodo extends Component {
 			<div>
 				<TodosList TodosList={listTodosItems}/>
 				<div className="addtodo">
+				{this.state.todos.length === 0 ? <img src={logo} alt="logo"/> : null }
 				<input className="input" onChange={this.onInputAdd} value={this.state.currentTodo} type="text" placeholder="add new todo..."/>
 				<i onClick={this.onClickAdd} className="fa fa-plus-circle aItem" aria-hidden="true"></i>
 				<br/>
-				{this.state.todos.length === 0 ? 'Add a new todo' : 'You have some todos to do'}
+				
 				</div>
 			</div>
 		);
