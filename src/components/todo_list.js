@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodosList = function(props) {
     return(
-        <ul>{props.TodosList}</ul>
+        <ul className="todoslist">{props.TodosList}</ul>
     );
 }
 export default TodosList;

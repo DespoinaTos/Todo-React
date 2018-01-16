@@ -41,11 +41,13 @@ class AddTodo extends Component {
 
 		return(
 			<div>
-				<input onChange={this.onInputAdd} value={this.state.currentTodo} type="text" placeholder="add new todo..."/>
-				<button onClick={this.onClickAdd}>Add</button>
+				<TodosList TodosList={listTodosItems}/>
+				<div className="addtodo">
+				<input className="input" onChange={this.onInputAdd} value={this.state.currentTodo} type="text" placeholder="add new todo..."/>
+				<i onClick={this.onClickAdd} className="fa fa-plus-circle aItem" aria-hidden="true"></i>
 				<br/>
 				{this.state.todos.length === 0 ? 'Add a new todo' : 'You have some todos to do'}
-				<TodosList TodosList={listTodosItems}/>
+				</div>
 			</div>
 		);
 	}

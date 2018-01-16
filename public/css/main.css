@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+
 /*-----------------------------------------------
 *   CSS reset
 -----------------------------------------------*/
@@ -137,6 +139,7 @@ table {
 /*-----------------------------------------------
 *   Root div
 -----------------------------------------------*/
+
 #root {
     display: flex;
     justify-content: center;
@@ -165,6 +168,72 @@ header img {
 body {
     background-color: #E7E636;
 }
+
+/*-----------------------------------------------
+*   Todos Table
+-----------------------------------------------*/
+
+.todoslist {
+    background-color: #000000;
+    color: #fff;
+    width: 530px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    display:  flex;
+    justify-content:  center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+/*-----------------------------------------------
+*   Add Todo
+-----------------------------------------------*/
+
+.addtodo {
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.input {
+    font-weight: 600;
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(58, 58, 58);
+    color: #1d1d1d;
+    font-family: 'Rubik';
+    font-size: 19px;
+}
+
+input::placeholder {
+    color: rgb(206, 206, 206);
+    text-align: center;
+  }
+
+  .fa-plus-circle {
+    font-size: 60px;
+    color: #101010;
+    margin-top: 3px;
+    display: inline-block;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.fa-plus-circle:hover {
+    font-size: 60px;
+    color: #925163;
+    margin-top: 3px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 /*-----------------------------------------------
 *   Footer
