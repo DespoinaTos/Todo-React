@@ -134,6 +134,29 @@ table {
     border-spacing: 0;
 }
 
+/*-----------------------------------------------
+*   Root div
+-----------------------------------------------*/
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------------------
+*   Header
+-----------------------------------------------*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width: 250px;
+}
+
 
 /*-----------------------------------------------
 *   Body Element

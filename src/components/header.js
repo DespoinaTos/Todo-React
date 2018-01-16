@@ -1,9 +1,12 @@
 import React from 'react';
+import logo from './img/monkey.svg';
 
 const Header = function(props) {
 
     return(
-        <h1>hello</h1>
+        <header className='logo'>
+                <img src={logo} alt="logo"/>
+        </header>
     );
 
 }
